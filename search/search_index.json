@@ -1,0 +1,349 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Home\n\n\nVolumetric Light Beam\n is a 5-stars-rated asset available for the Unity engine, which greatly \nimprove the lighting of your scene\n by generating \ntruly volumetric procedural beams of light\n / light shafts rays effects.\n\nThis is a perfect, \neasy and cheap way to simulate density, depth and volume\n for your spotlights and/or flashlights.\n\n\n>> Get it on the AssetStore <<\n\n\n\n\n\nThis is the Documentation of the Volumetric Light Beam plugin version \n1.31\n.\n\n\nPlease consider rating and writing a review on the \nAsset Store page\n if you like it! Thanks :)\n\n\n\n\nResources\n\n\nVideos\n\n\nShowcase\n\n\n\n\nHow to create your first Volumetric Light Beam\n\n\n\n\nDemos\n\n\n\n\nWebGL Demo\n\n\nWebGL Stress test\n\n\n\n\nContact\n\n\n\n\nHave a look of the \nForum Thread\n if you want to share something with the community.\n\n\nFeel free to \nreach us\n if you need help or to suggest some improvements/features!\n\n\n\n\n\n\nGetting Started\n\n\nInstall the plugin\n\n\nGet the plugin on the \nAssetStore\n and import it. The plugin installs the necessary files into a folder \nAssets/Plugins/VolumetricLightBeam\n in your project.\n\n\n  \n\n\n\n\nSupported Unity versions\n\n\nVolumetric Light Beam\n is compatible with all Unity versions from \n5.2.0\n to the latest \n2017.X\n releases.\n\n\n\n\nAnd that's it! You can start to create new volumetric lights!\n\n\nCreate your first light beam\n\n\nIn the Unity's \nCreate\n menu, browse to \nLight\n, and choose either one of the new entity:\n\n\n\n\nVolumetric Beam\n: creates a new standalone beam of light (no lights attached).\n\n\nVolumetric Beam and Spotlight\n: creates a new Spot-light with a beam of light attached to it.\n\n\n\n\n\n\nIn addition, you can attach a \nVolumetricLightBeam\n component to:\n\n\n\n\n\n\nAn existing \nSpotlight\n (right click on the inspector)\n\n\n\n\n\n\n\n\nAn existing GameObject (via the \nAdd Component\n button)",
+            "title": "Home"
+        },
+        {
+            "location": "/#home",
+            "text": "Volumetric Light Beam  is a 5-stars-rated asset available for the Unity engine, which greatly  improve the lighting of your scene  by generating  truly volumetric procedural beams of light  / light shafts rays effects. \nThis is a perfect,  easy and cheap way to simulate density, depth and volume  for your spotlights and/or flashlights.  >> Get it on the AssetStore <<   This is the Documentation of the Volumetric Light Beam plugin version  1.31 .  Please consider rating and writing a review on the  Asset Store page  if you like it! Thanks :)",
+            "title": "Home"
+        },
+        {
+            "location": "/#resources",
+            "text": "",
+            "title": "Resources"
+        },
+        {
+            "location": "/#videos",
+            "text": "",
+            "title": "Videos"
+        },
+        {
+            "location": "/#showcase",
+            "text": "",
+            "title": "Showcase"
+        },
+        {
+            "location": "/#how-to-create-your-first-volumetric-light-beam",
+            "text": "",
+            "title": "How to create your first Volumetric Light Beam"
+        },
+        {
+            "location": "/#demos",
+            "text": "WebGL Demo  WebGL Stress test",
+            "title": "Demos"
+        },
+        {
+            "location": "/#contact",
+            "text": "Have a look of the  Forum Thread  if you want to share something with the community.  Feel free to  reach us  if you need help or to suggest some improvements/features!",
+            "title": "Contact"
+        },
+        {
+            "location": "/#getting-started",
+            "text": "",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/#install-the-plugin",
+            "text": "Get the plugin on the  AssetStore  and import it. The plugin installs the necessary files into a folder  Assets/Plugins/VolumetricLightBeam  in your project.       Supported Unity versions  Volumetric Light Beam  is compatible with all Unity versions from  5.2.0  to the latest  2017.X  releases.   And that's it! You can start to create new volumetric lights!",
+            "title": "Install the plugin"
+        },
+        {
+            "location": "/#create-your-first-light-beam",
+            "text": "In the Unity's  Create  menu, browse to  Light , and choose either one of the new entity:   Volumetric Beam : creates a new standalone beam of light (no lights attached).  Volumetric Beam and Spotlight : creates a new Spot-light with a beam of light attached to it.    In addition, you can attach a  VolumetricLightBeam  component to:    An existing  Spotlight  (right click on the inspector)     An existing GameObject (via the  Add Component  button)",
+            "title": "Create your first light beam"
+        },
+        {
+            "location": "/comp-lightbeam/",
+            "text": "Volumetric Light Beam Component\n\n\nThe \nVolumetricLightBeam\n component is the main component of the plugin. It can be attached to any GameObject.\n\n\n\n\nEnabling / Disabling\n\n\nThe Volumetric Light Beam enabling/disabling mechanism has been designed the same way Unity handles Lights: using the \nenabled\n property.\n\nIf you want to turn on/off only the beam from script, you can change the \nenabled\n property of the component:\n\n\nvar beam = GetComponent<VLB.VolumetricLightBeam>();\nbeam.enabled = false; // turn off the beam (and the beam only)\n\n\n\n\n\n\nIf a \nVolumetricLightBeam\n component is attached on the same GameObject than a \nLight\n, disabling the \nLight\n component will not disable the beam (the light and the beam are 2 distinct components).\n\n\n\n\nAdditionally you can turn on/off both the light and the beam, by simply set the GameObject active/inactive: \ngameObject.SetActive(false);\n\n\n\n\nBasic\n\n\nSpot Angle\n\n\nDefine the angle (in degrees) at the base of the beam's cone.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n25 degrees\n\n\n45 degrees\n\n\n90 degrees\n\n\n\n\n\n\n\n\n\n\nIf attached to a Spotlight, check the toggle \nFrom Spot\n to get the same value than the \nSpot Angle\n Light's property.\n\n\n\n\nColor\n\n\nUse the color picker to set the color of the beam (takes account of the alpha value).\n\n\n\n\nIf attached to a Spotlight, check the toggle \nFrom Spot\n to get the same value than the \nColor\n Light's property.\n\n\n\n\nSide Thickness\n\n\nThickness of the beam when looking at it from the side.\n\n\n\n\n1.0 = the beam is fully visible with hard edges.\n\n\nLower values produce softer transition at beam edges.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.0\n\n\n0.75\n\n\n1.0\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nIf you set the lowest possible value and want to make the beam even thinner, just lower the \nSpot Angle\n and/or the \nTruncated Radius\n properties.\n\n\n\n\nTrack Changes During Playtime\n\n\nIf true, the light beam will keep track of the changes of its own properties and the spotlight attached to it (if any) during playtime. This would allow you to modify the light beam in realtime from Script, Animator and/or Timeline.\n\n\n\n\nEnabling this feature is at very minor performance cost. So keep it disabled if you don't plan to modify this light beam during playtime.\n\n\n\n\n\n\nInside\n\n\nAlpha\n\n\nModulate the opacity of the inside geometry of the beam. Is multiplied to \nColor's alpha\n.\n\n\nGlare (frontal)\n\n\nBoost intensity factor when looking at the beam from the inside directly at the source.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.0\n\n\n1.0\n\n\n\n\n\n\n\n\n\n\nOutside\n\n\nAlpha\n\n\nModulate the opacity of the outside geometry of the beam. Is multiplied to \nColor's alpha\n.\n\n\nGlare (from behind)\n\n\nBoost intensity factor when looking at the beam from behind.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.0\n\n\n1.0\n\n\n\n\n\n\n\n\n\n\nAttenuation\n\n\nEquation\n\n\nAttenuation equation used to compute fading between \nFade Start Distance\n and \nRange Distance\n.\n\n\n\n\nLinear\n: Simple linear attenuation.\n\n\nQuadratic\n: Quadratic attenuation. Since this is the way light behaves in real life, this usually gives more realistic results than the linear attenuation.\n\n\nBlend\n: Custom blending mix between linear and quadratic attenuation (can be customize using a slider).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinear\n\n\nBlend (factor 0.5)\n\n\nQuadratic\n\n\n\n\n\n\n\n\nRange Distance\n\n\nMaximum distance (in units) of the light beam. After this distance, the beam is entirely faded out.  \n\n\n\n\nIf attached to a Spotlight, check the toggle \nFrom Spot\n to get the same value than the \nRange\n Light's property.\n\n\n\n\nFade Start Distance\n\n\nDistance from the light source (in units) the beam intensity will start to fall off.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0%\n\n\n25%\n\n\n50%\n\n\n\n\n\n\n\n\n\n\n3D Noise\n\n\n3D Noise is a feature to simulate volumetric fog / mist / smoke effects on the beams.\n\nTo achieve that, a tiled 3D noise texture is internally used.\n\n\n\n\nPlatform specific\n\n\nSince mobile platforms cannot handle 3D textures, this feature is currently not supported on mobile.\n\n\n\n\nEnabled\n\n\nEnable the 3D Noise effect.\n\n\n\n\nKnown issue with WebGL in Editor\n\n\nFor some reason, 3D textures (and so 3D Noise) are not working in Editor if WebGL is set as the current platform. But the 3D Noise works totally fine in the browser if you export a WebGL build... So as a workaround, and until this bug is fixed by Unity, this feature is temporary disabled in Editor with WebGL.\n\n\n\n\nIntensity\n\n\nHigher intensity means the noise contribution is stronger and more visible.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.0 (disabled)\n\n\n0.5\n\n\n1.0\n\n\n\n\n\n\n\n\nScale\n\n\n3D Noise texture scaling. Higher scale makes the noise more visible, but potentially less realistic because the texture tiling could become more apparent.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.4\n\n\n0.8\n\n\n1.4\n\n\n\n\n\n\n\n\n\n\nIf the toggle \nUse Global\n is checked, it will use \nthe global \nScale\n property set in \nconfiguration file\n.\n\n\n\n\nVelocity\n\n\nVector3 property defining the world space direction (the direction of the vector) and speed (the magnitude of the vector) of the noise scrolling, simulating the fog/smoke movement.\n\n\n\n\nTip\n\n\nWe recommend to tweak this property during playtime, because depending on the Unity version you use, the texture scrolling is not updated every frame.\n\n\n\n\n\n\nIf the toggle \nUse Global\n is checked, it will use \nthe global \nVelocity\n property set in the \nconfiguration file\n.\n\n\n\n\n\n\nSoft Intersections Blending Distances\n\n\nCamera\n\n\nBecause the volumetric beams are rendered using cone geometry, it is possible for the camera to intersect with the geometry, which could produce unwanted artifacts. This property is designed to fix this issue. It specifies the distance between the beam geometry and the camera's near clip plane where the beam will start to fade, making a smoother transition.  \n\n\n\n\n0.0 = hard intersection with the camera's near clip plane.  \n\n\nHigher values produce soft intersection when the camera is near the cone geometry.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.0\n\n\n0.25\n\n\n\n\n\n\n\n\nOpaque Geometry\n\n\nDistance from the world geometry the beam will fade.\n\n\n\n\n0.0 = hard intersection with world's geometry. \n\n\nHigher values produce soft intersection when the beam intersects other opaque geometry.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.0\n\n\n1.0\n\n\n\n\n\n\n\n\n\n\nTo support this feature, the rendering camera must use \nDepthTextureMode.Depth\n.\n\nBy default, the plugin will enforce this property to all cameras attempting to render a beam. If you want to disable this behavior for some reason, you can comment the following line in \nBeamGeometry.cs\n : \n#define FORCE_CURRENT_CAMERA_DEPTH_TEXTURE_MODE\n.\n\n\n\n\n\n\nPlatform specific\n\n\nThe quality of this feature is highly depend on the depth buffer precision. On platforms with low precision Z buffer such as mobile, it's recommended to keep a small depth range on your cameras clip planes: the difference between the near and far clip planes should be as low as possible.\n\n\n\n\n\n\nCone Geometry\n\n\nTruncated Radius\n\n\nRadius (in units) at the beam's source (the top of the cone).\n\n\n\n\n0.0 will generate perfect cone geometry (with a sharp apex).\n\n\nHigher values will generate truncated cones.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.0\n\n\n0.25\n\n\n\n\n\n\n\n\n\n\nIncreasing the \nTruncated Radius\n property will not increase the \nSpot Angle\n. This means that the cone's maximum radius is not dependent on the \nTruncated Radius\n property.\n\n\n\n\nSides\n\n\nNumber of Sides of the cone (tessellation). Higher values give better looking results, but require more memory and graphic performance.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8 sides\n\n\n32 sides\n\n\n\n\n\n\n\n\n\n\nChanging the \nSides\n property at runtime is not supported (even if the \nTrack Changes During Playtime\n property if enabled), because it would require to regenerate the beam mesh, which would be too performance intensive.\n\n\n\n\nCap Geom\n\n\nShow the cap of the cone or not (only visible from the inside).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOff\n\n\nOn\n\n\n\n\n\n\n\n\n\n\nEven if the \nTruncated Radius\n is 0.0, the \nCap Geom\n property is still important to consider, since the \nTruncated Radius\n can be changed in realtime.\n\n\n\n\n\n\nChanging the \nCap Geom\n property at runtime is not supported (even if the \nTrack Changes During Playtime\n property if enabled), because it would require to regenerate the beam mesh, which would be too performance intensive.",
+            "title": "Light Beam"
+        },
+        {
+            "location": "/comp-lightbeam/#volumetric-light-beam-component",
+            "text": "The  VolumetricLightBeam  component is the main component of the plugin. It can be attached to any GameObject.",
+            "title": "Volumetric Light Beam Component"
+        },
+        {
+            "location": "/comp-lightbeam/#enabling-disabling",
+            "text": "The Volumetric Light Beam enabling/disabling mechanism has been designed the same way Unity handles Lights: using the  enabled  property. \nIf you want to turn on/off only the beam from script, you can change the  enabled  property of the component:  var beam = GetComponent<VLB.VolumetricLightBeam>();\nbeam.enabled = false; // turn off the beam (and the beam only)   If a  VolumetricLightBeam  component is attached on the same GameObject than a  Light , disabling the  Light  component will not disable the beam (the light and the beam are 2 distinct components).   Additionally you can turn on/off both the light and the beam, by simply set the GameObject active/inactive:  gameObject.SetActive(false);",
+            "title": "Enabling / Disabling"
+        },
+        {
+            "location": "/comp-lightbeam/#basic",
+            "text": "",
+            "title": "Basic"
+        },
+        {
+            "location": "/comp-lightbeam/#spot-angle",
+            "text": "Define the angle (in degrees) at the base of the beam's cone.            25 degrees  45 degrees  90 degrees      If attached to a Spotlight, check the toggle  From Spot  to get the same value than the  Spot Angle  Light's property.",
+            "title": "Spot Angle"
+        },
+        {
+            "location": "/comp-lightbeam/#color",
+            "text": "Use the color picker to set the color of the beam (takes account of the alpha value).   If attached to a Spotlight, check the toggle  From Spot  to get the same value than the  Color  Light's property.",
+            "title": "Color"
+        },
+        {
+            "location": "/comp-lightbeam/#side-thickness",
+            "text": "Thickness of the beam when looking at it from the side.   1.0 = the beam is fully visible with hard edges.  Lower values produce softer transition at beam edges.             0.0  0.75  1.0      Tip  If you set the lowest possible value and want to make the beam even thinner, just lower the  Spot Angle  and/or the  Truncated Radius  properties.",
+            "title": "Side Thickness"
+        },
+        {
+            "location": "/comp-lightbeam/#track-changes-during-playtime",
+            "text": "If true, the light beam will keep track of the changes of its own properties and the spotlight attached to it (if any) during playtime. This would allow you to modify the light beam in realtime from Script, Animator and/or Timeline.   Enabling this feature is at very minor performance cost. So keep it disabled if you don't plan to modify this light beam during playtime.",
+            "title": "Track Changes During Playtime"
+        },
+        {
+            "location": "/comp-lightbeam/#inside",
+            "text": "",
+            "title": "Inside"
+        },
+        {
+            "location": "/comp-lightbeam/#alpha",
+            "text": "Modulate the opacity of the inside geometry of the beam. Is multiplied to  Color's alpha .",
+            "title": "Alpha"
+        },
+        {
+            "location": "/comp-lightbeam/#glare-frontal",
+            "text": "Boost intensity factor when looking at the beam from the inside directly at the source.           0.0  1.0",
+            "title": "Glare (frontal)"
+        },
+        {
+            "location": "/comp-lightbeam/#outside",
+            "text": "",
+            "title": "Outside"
+        },
+        {
+            "location": "/comp-lightbeam/#alpha_1",
+            "text": "Modulate the opacity of the outside geometry of the beam. Is multiplied to  Color's alpha .",
+            "title": "Alpha"
+        },
+        {
+            "location": "/comp-lightbeam/#glare-from-behind",
+            "text": "Boost intensity factor when looking at the beam from behind.           0.0  1.0",
+            "title": "Glare (from behind)"
+        },
+        {
+            "location": "/comp-lightbeam/#attenuation",
+            "text": "",
+            "title": "Attenuation"
+        },
+        {
+            "location": "/comp-lightbeam/#equation",
+            "text": "Attenuation equation used to compute fading between  Fade Start Distance  and  Range Distance .   Linear : Simple linear attenuation.  Quadratic : Quadratic attenuation. Since this is the way light behaves in real life, this usually gives more realistic results than the linear attenuation.  Blend : Custom blending mix between linear and quadratic attenuation (can be customize using a slider).             Linear  Blend (factor 0.5)  Quadratic",
+            "title": "Equation"
+        },
+        {
+            "location": "/comp-lightbeam/#range-distance",
+            "text": "Maximum distance (in units) of the light beam. After this distance, the beam is entirely faded out.     If attached to a Spotlight, check the toggle  From Spot  to get the same value than the  Range  Light's property.",
+            "title": "Range Distance"
+        },
+        {
+            "location": "/comp-lightbeam/#fade-start-distance",
+            "text": "Distance from the light source (in units) the beam intensity will start to fall off.            0%  25%  50%",
+            "title": "Fade Start Distance"
+        },
+        {
+            "location": "/comp-lightbeam/#3d-noise",
+            "text": "3D Noise is a feature to simulate volumetric fog / mist / smoke effects on the beams. \nTo achieve that, a tiled 3D noise texture is internally used.   Platform specific  Since mobile platforms cannot handle 3D textures, this feature is currently not supported on mobile.",
+            "title": "3D Noise"
+        },
+        {
+            "location": "/comp-lightbeam/#enabled",
+            "text": "Enable the 3D Noise effect.   Known issue with WebGL in Editor  For some reason, 3D textures (and so 3D Noise) are not working in Editor if WebGL is set as the current platform. But the 3D Noise works totally fine in the browser if you export a WebGL build... So as a workaround, and until this bug is fixed by Unity, this feature is temporary disabled in Editor with WebGL.",
+            "title": "Enabled"
+        },
+        {
+            "location": "/comp-lightbeam/#intensity",
+            "text": "Higher intensity means the noise contribution is stronger and more visible.            0.0 (disabled)  0.5  1.0",
+            "title": "Intensity"
+        },
+        {
+            "location": "/comp-lightbeam/#scale",
+            "text": "3D Noise texture scaling. Higher scale makes the noise more visible, but potentially less realistic because the texture tiling could become more apparent.            0.4  0.8  1.4      If the toggle  Use Global  is checked, it will use  the global  Scale  property set in  configuration file .",
+            "title": "Scale"
+        },
+        {
+            "location": "/comp-lightbeam/#velocity",
+            "text": "Vector3 property defining the world space direction (the direction of the vector) and speed (the magnitude of the vector) of the noise scrolling, simulating the fog/smoke movement.   Tip  We recommend to tweak this property during playtime, because depending on the Unity version you use, the texture scrolling is not updated every frame.    If the toggle  Use Global  is checked, it will use  the global  Velocity  property set in the  configuration file .",
+            "title": "Velocity"
+        },
+        {
+            "location": "/comp-lightbeam/#soft-intersections-blending-distances",
+            "text": "",
+            "title": "Soft Intersections Blending Distances"
+        },
+        {
+            "location": "/comp-lightbeam/#camera",
+            "text": "Because the volumetric beams are rendered using cone geometry, it is possible for the camera to intersect with the geometry, which could produce unwanted artifacts. This property is designed to fix this issue. It specifies the distance between the beam geometry and the camera's near clip plane where the beam will start to fade, making a smoother transition.     0.0 = hard intersection with the camera's near clip plane.    Higher values produce soft intersection when the camera is near the cone geometry.            0.0  0.25",
+            "title": "Camera"
+        },
+        {
+            "location": "/comp-lightbeam/#opaque-geometry",
+            "text": "Distance from the world geometry the beam will fade.   0.0 = hard intersection with world's geometry.   Higher values produce soft intersection when the beam intersects other opaque geometry.            0.0  1.0      To support this feature, the rendering camera must use  DepthTextureMode.Depth . \nBy default, the plugin will enforce this property to all cameras attempting to render a beam. If you want to disable this behavior for some reason, you can comment the following line in  BeamGeometry.cs  :  #define FORCE_CURRENT_CAMERA_DEPTH_TEXTURE_MODE .    Platform specific  The quality of this feature is highly depend on the depth buffer precision. On platforms with low precision Z buffer such as mobile, it's recommended to keep a small depth range on your cameras clip planes: the difference between the near and far clip planes should be as low as possible.",
+            "title": "Opaque Geometry"
+        },
+        {
+            "location": "/comp-lightbeam/#cone-geometry",
+            "text": "",
+            "title": "Cone Geometry"
+        },
+        {
+            "location": "/comp-lightbeam/#truncated-radius",
+            "text": "Radius (in units) at the beam's source (the top of the cone).   0.0 will generate perfect cone geometry (with a sharp apex).  Higher values will generate truncated cones.            0.0  0.25      Increasing the  Truncated Radius  property will not increase the  Spot Angle . This means that the cone's maximum radius is not dependent on the  Truncated Radius  property.",
+            "title": "Truncated Radius"
+        },
+        {
+            "location": "/comp-lightbeam/#sides",
+            "text": "Number of Sides of the cone (tessellation). Higher values give better looking results, but require more memory and graphic performance.           8 sides  32 sides      Changing the  Sides  property at runtime is not supported (even if the  Track Changes During Playtime  property if enabled), because it would require to regenerate the beam mesh, which would be too performance intensive.",
+            "title": "Sides"
+        },
+        {
+            "location": "/comp-lightbeam/#cap-geom",
+            "text": "Show the cap of the cone or not (only visible from the inside).           Off  On      Even if the  Truncated Radius  is 0.0, the  Cap Geom  property is still important to consider, since the  Truncated Radius  can be changed in realtime.    Changing the  Cap Geom  property at runtime is not supported (even if the  Track Changes During Playtime  property if enabled), because it would require to regenerate the beam mesh, which would be too performance intensive.",
+            "title": "Cap Geom"
+        },
+        {
+            "location": "/comp-dustparticles/",
+            "text": "Volumetric Dust Particles Component\n\n\nThe \nVolumetric Dust Particles\n feature is designed to simulate highly detailed dustlight / mote effects. These particles are rendered using \nShuriken\n.\n\n\n\n\n\n\n Supported Unity version\n\n\nVolumetric Dust Particles\n feature is only supported in \nUnity 5.5 or above\n.\n\n\n\n\n\n\nPerformance consideration\n\n\nSince this feature relies on particles, depending on the number of particles you want to display, this could be performance intensive. That's why a \nculling system\n is built-in in this component: when enabled, the particles which are too far away from the camera (and so which would be barely visible) won't be rendered, saving on performance.\n\n\n\n\n\n\nTip\n\n\nWe do not recommend to use this feature if you plan to move or change properties of the beam during playtime.\n\n\n\n\n\n\nUsage\n\n\nThe \nVolumetric Dust Particles\n component must be attached to a \nVolumetric Light Beam\n. It lets you easily customize the rendering, density and movement of the particles in the inspector.\n\n\nYou can attach this component via:\n\n\n\n\nThe \nAdd Dust Particles\n button and context menu from the \nVolumetric Light Beam\n component.\n\n\n\n\nThe \nAdd Component\n panel.\n\n\n\n\n\n\n\n\nRendering\n\n\nAlpha\n\n\nMax opacity of the particles.\n\n\nSize\n\n\nMax size of the particles.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.01\n\n\n0.02\n\n\n\n\n\n\n\n\n\n\nDirection & Velocity\n\n\nDirection\n\n\nDirection of the particles.\n\n\n\n\nCone\n: particles follows the cone/beam direction.\n\n\nRandom\n: random direction.\n\n\n\n\nSpeed\n\n\nMovement speed of the particles.\n\n\n\n\nCulling\n\n\nEnabled\n\n\nEnable particles culling based on the distance to the Main Camera. We highly recommend to enable this feature to keep good runtime performances.\n\n\n\n\nIn order to use this feature, you must have a camera tagged as \nMainCamera\n in your scene.\n\n\n\n\n\n\nMax Distance\n\n\nThe particles will not be rendered if they are further than this distance to the Main Camera.\n\n\n\n\nSpawning\n\n\nDensity\n\n\nControls how many particles are spawned. The higher the density, the more particles are spawned, the higher the performance cost is.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDensity: 5 (28 particles max)\n\n\nDensity: 25 (140 particles max)\n\n\n\n\n\n\n\n\nMax Distance\n\n\nThe maximum relative distance (from the light source) where the particles are spawned. The lower it is, the more the particles are gathered near the light source.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n0.5 (half distance)\n\n\n1.0 (max distance)",
+            "title": "Dust Particles"
+        },
+        {
+            "location": "/comp-dustparticles/#volumetric-dust-particles-component",
+            "text": "The  Volumetric Dust Particles  feature is designed to simulate highly detailed dustlight / mote effects. These particles are rendered using  Shuriken .     Supported Unity version  Volumetric Dust Particles  feature is only supported in  Unity 5.5 or above .    Performance consideration  Since this feature relies on particles, depending on the number of particles you want to display, this could be performance intensive. That's why a  culling system  is built-in in this component: when enabled, the particles which are too far away from the camera (and so which would be barely visible) won't be rendered, saving on performance.    Tip  We do not recommend to use this feature if you plan to move or change properties of the beam during playtime.",
+            "title": "Volumetric Dust Particles Component"
+        },
+        {
+            "location": "/comp-dustparticles/#usage",
+            "text": "The  Volumetric Dust Particles  component must be attached to a  Volumetric Light Beam . It lets you easily customize the rendering, density and movement of the particles in the inspector.  You can attach this component via:   The  Add Dust Particles  button and context menu from the  Volumetric Light Beam  component.   The  Add Component  panel.",
+            "title": "Usage"
+        },
+        {
+            "location": "/comp-dustparticles/#rendering",
+            "text": "",
+            "title": "Rendering"
+        },
+        {
+            "location": "/comp-dustparticles/#alpha",
+            "text": "Max opacity of the particles.",
+            "title": "Alpha"
+        },
+        {
+            "location": "/comp-dustparticles/#size",
+            "text": "Max size of the particles.           0.01  0.02",
+            "title": "Size"
+        },
+        {
+            "location": "/comp-dustparticles/#direction-velocity",
+            "text": "",
+            "title": "Direction &amp; Velocity"
+        },
+        {
+            "location": "/comp-dustparticles/#direction",
+            "text": "Direction of the particles.   Cone : particles follows the cone/beam direction.  Random : random direction.",
+            "title": "Direction"
+        },
+        {
+            "location": "/comp-dustparticles/#speed",
+            "text": "Movement speed of the particles.",
+            "title": "Speed"
+        },
+        {
+            "location": "/comp-dustparticles/#culling",
+            "text": "",
+            "title": "Culling"
+        },
+        {
+            "location": "/comp-dustparticles/#enabled",
+            "text": "Enable particles culling based on the distance to the Main Camera. We highly recommend to enable this feature to keep good runtime performances.   In order to use this feature, you must have a camera tagged as  MainCamera  in your scene.",
+            "title": "Enabled"
+        },
+        {
+            "location": "/comp-dustparticles/#max-distance",
+            "text": "The particles will not be rendered if they are further than this distance to the Main Camera.",
+            "title": "Max Distance"
+        },
+        {
+            "location": "/comp-dustparticles/#spawning",
+            "text": "",
+            "title": "Spawning"
+        },
+        {
+            "location": "/comp-dustparticles/#density",
+            "text": "Controls how many particles are spawned. The higher the density, the more particles are spawned, the higher the performance cost is.           Density: 5 (28 particles max)  Density: 25 (140 particles max)",
+            "title": "Density"
+        },
+        {
+            "location": "/comp-dustparticles/#max-distance_1",
+            "text": "The maximum relative distance (from the light source) where the particles are spawned. The lower it is, the more the particles are gathered near the light source.           0.5 (half distance)  1.0 (max distance)",
+            "title": "Max Distance"
+        },
+        {
+            "location": "/config/",
+            "text": "Configuration\n\n\nIn your project file, look for a file named \nConfig.asset\n under the \nPlugins/VolumetricLightBeam/Resources\n folder. In the inspector, you can configure the following properties.\n\n\n\n\n\n\nBeam Geometry\n\n\nLayer\n\n\nControls on which layer the beam geometry meshes will be created in. Default layer is \nTransparentFX\n.\n\n\nShader\n\n\nMain shader applied to the cone beam geometry.\n\n\n\n\nWarning\n\n\nWe highly recommend to keep this property default value.\n\n\n\n\n\n\nGlobal 3D Noise\n\n\nScale\n\n\nGlobal 3D Noise texture scaling. Higher scale make the noise more visible, but potentially less realistic.\n\n\nVelocity\n\n\nVector3 property defining the global World Space direction and speed of the noise scrolling, simulating the fog/smoke movement.\n\n\n\n\n3D Noise Texture Data\n\n\nBinary file\n\n\nBinary file holding the 3D Noise texture data (a 3D array). Must be exactly Size x Size x Size bytes long.\n\n\nData dimension\n\n\nSize (of one dimension) of the 3D Noise data. Must be power of 2. So if the binary file holds a 32x32x32 texture, this value must be 32.\n\n\n\n\nVolumetric Dust Particles\n\n\nPrefab\n\n\nParticleSystem prefab instantiated for the Volumetric Dust Particles feature (Unity 5.5 or above).",
+            "title": "Configuration"
+        },
+        {
+            "location": "/config/#configuration",
+            "text": "In your project file, look for a file named  Config.asset  under the  Plugins/VolumetricLightBeam/Resources  folder. In the inspector, you can configure the following properties.",
+            "title": "Configuration"
+        },
+        {
+            "location": "/config/#beam-geometry",
+            "text": "",
+            "title": "Beam Geometry"
+        },
+        {
+            "location": "/config/#layer",
+            "text": "Controls on which layer the beam geometry meshes will be created in. Default layer is  TransparentFX .",
+            "title": "Layer"
+        },
+        {
+            "location": "/config/#shader",
+            "text": "Main shader applied to the cone beam geometry.   Warning  We highly recommend to keep this property default value.",
+            "title": "Shader"
+        },
+        {
+            "location": "/config/#global-3d-noise",
+            "text": "",
+            "title": "Global 3D Noise"
+        },
+        {
+            "location": "/config/#scale",
+            "text": "Global 3D Noise texture scaling. Higher scale make the noise more visible, but potentially less realistic.",
+            "title": "Scale"
+        },
+        {
+            "location": "/config/#velocity",
+            "text": "Vector3 property defining the global World Space direction and speed of the noise scrolling, simulating the fog/smoke movement.",
+            "title": "Velocity"
+        },
+        {
+            "location": "/config/#3d-noise-texture-data",
+            "text": "",
+            "title": "3D Noise Texture Data"
+        },
+        {
+            "location": "/config/#binary-file",
+            "text": "Binary file holding the 3D Noise texture data (a 3D array). Must be exactly Size x Size x Size bytes long.",
+            "title": "Binary file"
+        },
+        {
+            "location": "/config/#data-dimension",
+            "text": "Size (of one dimension) of the 3D Noise data. Must be power of 2. So if the binary file holds a 32x32x32 texture, this value must be 32.",
+            "title": "Data dimension"
+        },
+        {
+            "location": "/config/#volumetric-dust-particles",
+            "text": "",
+            "title": "Volumetric Dust Particles"
+        },
+        {
+            "location": "/config/#prefab",
+            "text": "ParticleSystem prefab instantiated for the Volumetric Dust Particles feature (Unity 5.5 or above).",
+            "title": "Prefab"
+        }
+    ]
+}

@@ -1,0 +1,683 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation of Volumetric Light Beam Unity Asset">
+      
+      
+      
+        <meta name="author" content="Tech Salad">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.4">
+    
+    
+      
+        <title>Dust Particles - Volumetric Light Beam Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.bcabdff3.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.792431c1.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    
+      <body data-md-color-primary="teal" data-md-color-accent="amber">
+    
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Volumetric Light Beam Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Volumetric Light Beam Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Dust Particles
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Volumetric Light Beam Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../comp-lightbeam/" title="Light Beam" class="md-nav__link">
+      Light Beam
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Dust Particles
+      </label>
+    
+    <a href="./" title="Dust Particles" class="md-nav__link md-nav__link--active">
+      Dust Particles
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" title="Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering" title="Rendering" class="md-nav__link">
+    Rendering
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alpha" title="Alpha" class="md-nav__link">
+    Alpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size" title="Size" class="md-nav__link">
+    Size
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-velocity" title="Direction &amp; Velocity" class="md-nav__link">
+    Direction &amp; Velocity
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direction" title="Direction" class="md-nav__link">
+    Direction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speed" title="Speed" class="md-nav__link">
+    Speed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#culling" title="Culling" class="md-nav__link">
+    Culling
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabled" title="Enabled" class="md-nav__link">
+    Enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-distance" title="Max Distance" class="md-nav__link">
+    Max Distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawning" title="Spawning" class="md-nav__link">
+    Spawning
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#density" title="Density" class="md-nav__link">
+    Density
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-distance_1" title="Max Distance" class="md-nav__link">
+    Max Distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../config/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" title="Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering" title="Rendering" class="md-nav__link">
+    Rendering
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alpha" title="Alpha" class="md-nav__link">
+    Alpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#size" title="Size" class="md-nav__link">
+    Size
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-velocity" title="Direction &amp; Velocity" class="md-nav__link">
+    Direction &amp; Velocity
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direction" title="Direction" class="md-nav__link">
+    Direction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speed" title="Speed" class="md-nav__link">
+    Speed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#culling" title="Culling" class="md-nav__link">
+    Culling
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabled" title="Enabled" class="md-nav__link">
+    Enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-distance" title="Max Distance" class="md-nav__link">
+    Max Distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawning" title="Spawning" class="md-nav__link">
+    Spawning
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#density" title="Density" class="md-nav__link">
+    Density
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-distance_1" title="Max Distance" class="md-nav__link">
+    Max Distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="volumetric-dust-particles-component">Volumetric Dust Particles Component</h1>
+<p>The <em>Volumetric Dust Particles</em> feature is designed to simulate highly detailed dustlight / mote effects. These particles are rendered using <em>Shuriken</em>.</p>
+<p><img alt="Inspector Dust Particles" src="../img/inspector_particles.png" /></p>
+<div class="admonition info">
+<p class="admonition-title"> Supported Unity version</p>
+<p><em>Volumetric Dust Particles</em> feature is only supported in <strong>Unity 5.5 or above</strong>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Performance consideration</p>
+<p>Since this feature relies on particles, depending on the number of particles you want to display, this could be performance intensive. That's why a <a href="#culling">culling system</a> is built-in in this component: when enabled, the particles which are too far away from the camera (and so which would be barely visible) won't be rendered, saving on performance.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We do not recommend to use this feature if you plan to move or change properties of the beam during playtime.</p>
+</div>
+<hr />
+<h2 id="usage">Usage</h2>
+<p>The <em>Volumetric Dust Particles</em> component must be attached to a <a href="../comp-lightbeam/"><em>Volumetric Light Beam</em></a>. It lets you easily customize the rendering, density and movement of the particles in the inspector.</p>
+<p>You can attach this component via:</p>
+<ul>
+<li>The <strong>Add Dust Particles</strong> button and context menu from the <a href="../comp-lightbeam/"><em>Volumetric Light Beam</em></a> component.<br />
+<img alt="Attach dust particles to a light beam" src="../img/menu_add_particles1.png" /></li>
+<li>The <strong>Add Component</strong> panel.<br />
+<img alt="Attach dust particles to a light beam" src="../img/menu_add_particles2.png" /></li>
+</ul>
+<hr />
+<h2 id="rendering">Rendering</h2>
+<h3 id="alpha">Alpha</h3>
+<p>Max opacity of the particles.</p>
+<h3 id="size">Size</h3>
+<p>Max size of the particles.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Particles Size" src="../img/prop_particles_size_01.png" /></th>
+<th align="center"><img alt="Particles Size" src="../img/prop_particles_size_02.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.01</td>
+<td align="center">0.02</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="direction-velocity">Direction &amp; Velocity</h2>
+<h3 id="direction">Direction</h3>
+<p>Direction of the particles.</p>
+<ul>
+<li><strong>Cone</strong>: particles follows the cone/beam direction.</li>
+<li><strong>Random</strong>: random direction.</li>
+</ul>
+<h3 id="speed">Speed</h3>
+<p>Movement speed of the particles.</p>
+<hr />
+<h2 id="culling">Culling</h2>
+<h3 id="enabled">Enabled</h3>
+<p>Enable particles culling based on the distance to the Main Camera. We highly recommend to enable this feature to keep good runtime performances.</p>
+<div class="admonition note">
+<p>In order to use this feature, you must have a camera tagged as <em>MainCamera</em> in your scene.<br />
+<img alt="Particles Density" src="../img/inspector_camera_main.png" /></p>
+</div>
+<h3 id="max-distance">Max Distance</h3>
+<p>The particles will not be rendered if they are further than this distance to the Main Camera.</p>
+<hr />
+<h2 id="spawning">Spawning</h2>
+<h3 id="density">Density</h3>
+<p>Controls how many particles are spawned. The higher the density, the more particles are spawned, the higher the performance cost is.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Spawning Density" src="../img/prop_particles_spawn_density_5.png" /></th>
+<th align="center"><img alt="Spawning Density" src="../img/prop_particles_spawn_density_25.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Density: 5 (28 particles max)</td>
+<td align="center">Density: 25 (140 particles max)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="max-distance_1">Max Distance</h3>
+<p>The maximum relative distance (from the light source) where the particles are spawned. The lower it is, the more the particles are gathered near the light source.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Spawning Distance" src="../img/prop_particles_spawn_dist_0.5.png" /></th>
+<th align="center"><img alt="Particles Distance" src="../img/prop_particles_spawn_dist_1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.5 (half distance)</td>
+<td align="center">1.0 (max distance)</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../comp-lightbeam/" title="Light Beam" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Light Beam
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../config/" title="Configuration" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Configuration
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.6cdc17f0.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-88459828-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1169 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation of Volumetric Light Beam Unity Asset">
+      
+      
+      
+        <meta name="author" content="Tech Salad">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.4">
+    
+    
+      
+        <title>Light Beam - Volumetric Light Beam Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.bcabdff3.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.792431c1.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    
+      <body data-md-color-primary="teal" data-md-color-accent="amber">
+    
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Volumetric Light Beam Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Volumetric Light Beam Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Light Beam
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Volumetric Light Beam Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Light Beam
+      </label>
+    
+    <a href="./" title="Light Beam" class="md-nav__link md-nav__link--active">
+      Light Beam
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-disabling" title="Enabling / Disabling" class="md-nav__link">
+    Enabling / Disabling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic" title="Basic" class="md-nav__link">
+    Basic
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spot-angle" title="Spot Angle" class="md-nav__link">
+    Spot Angle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color" title="Color" class="md-nav__link">
+    Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#side-thickness" title="Side Thickness" class="md-nav__link">
+    Side Thickness
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-changes-during-playtime" title="Track Changes During Playtime" class="md-nav__link">
+    Track Changes During Playtime
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inside" title="Inside" class="md-nav__link">
+    Inside
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alpha" title="Alpha" class="md-nav__link">
+    Alpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glare-frontal" title="Glare (frontal)" class="md-nav__link">
+    Glare (frontal)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outside" title="Outside" class="md-nav__link">
+    Outside
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alpha_1" title="Alpha" class="md-nav__link">
+    Alpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glare-from-behind" title="Glare (from behind)" class="md-nav__link">
+    Glare (from behind)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attenuation" title="Attenuation" class="md-nav__link">
+    Attenuation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equation" title="Equation" class="md-nav__link">
+    Equation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range-distance" title="Range Distance" class="md-nav__link">
+    Range Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fade-start-distance" title="Fade Start Distance" class="md-nav__link">
+    Fade Start Distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-noise" title="3D Noise" class="md-nav__link">
+    3D Noise
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabled" title="Enabled" class="md-nav__link">
+    Enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intensity" title="Intensity" class="md-nav__link">
+    Intensity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale" title="Scale" class="md-nav__link">
+    Scale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velocity" title="Velocity" class="md-nav__link">
+    Velocity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soft-intersections-blending-distances" title="Soft Intersections Blending Distances" class="md-nav__link">
+    Soft Intersections Blending Distances
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera" title="Camera" class="md-nav__link">
+    Camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opaque-geometry" title="Opaque Geometry" class="md-nav__link">
+    Opaque Geometry
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cone-geometry" title="Cone Geometry" class="md-nav__link">
+    Cone Geometry
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#truncated-radius" title="Truncated Radius" class="md-nav__link">
+    Truncated Radius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sides" title="Sides" class="md-nav__link">
+    Sides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cap-geom" title="Cap Geom" class="md-nav__link">
+    Cap Geom
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../comp-dustparticles/" title="Dust Particles" class="md-nav__link">
+      Dust Particles
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../config/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-disabling" title="Enabling / Disabling" class="md-nav__link">
+    Enabling / Disabling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic" title="Basic" class="md-nav__link">
+    Basic
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spot-angle" title="Spot Angle" class="md-nav__link">
+    Spot Angle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color" title="Color" class="md-nav__link">
+    Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#side-thickness" title="Side Thickness" class="md-nav__link">
+    Side Thickness
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-changes-during-playtime" title="Track Changes During Playtime" class="md-nav__link">
+    Track Changes During Playtime
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inside" title="Inside" class="md-nav__link">
+    Inside
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alpha" title="Alpha" class="md-nav__link">
+    Alpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glare-frontal" title="Glare (frontal)" class="md-nav__link">
+    Glare (frontal)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outside" title="Outside" class="md-nav__link">
+    Outside
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alpha_1" title="Alpha" class="md-nav__link">
+    Alpha
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glare-from-behind" title="Glare (from behind)" class="md-nav__link">
+    Glare (from behind)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attenuation" title="Attenuation" class="md-nav__link">
+    Attenuation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equation" title="Equation" class="md-nav__link">
+    Equation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range-distance" title="Range Distance" class="md-nav__link">
+    Range Distance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fade-start-distance" title="Fade Start Distance" class="md-nav__link">
+    Fade Start Distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-noise" title="3D Noise" class="md-nav__link">
+    3D Noise
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabled" title="Enabled" class="md-nav__link">
+    Enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intensity" title="Intensity" class="md-nav__link">
+    Intensity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale" title="Scale" class="md-nav__link">
+    Scale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velocity" title="Velocity" class="md-nav__link">
+    Velocity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soft-intersections-blending-distances" title="Soft Intersections Blending Distances" class="md-nav__link">
+    Soft Intersections Blending Distances
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camera" title="Camera" class="md-nav__link">
+    Camera
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opaque-geometry" title="Opaque Geometry" class="md-nav__link">
+    Opaque Geometry
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cone-geometry" title="Cone Geometry" class="md-nav__link">
+    Cone Geometry
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#truncated-radius" title="Truncated Radius" class="md-nav__link">
+    Truncated Radius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sides" title="Sides" class="md-nav__link">
+    Sides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cap-geom" title="Cap Geom" class="md-nav__link">
+    Cap Geom
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="volumetric-light-beam-component">Volumetric Light Beam Component</h1>
+<p>The <em>VolumetricLightBeam</em> component is the main component of the plugin. It can be attached to any GameObject.</p>
+<p><img alt="Inspector Beam" src="../img/inspector_beam.png" /></p>
+<h2 id="enabling-disabling">Enabling / Disabling</h2>
+<p>The Volumetric Light Beam enabling/disabling mechanism has been designed the same way Unity handles Lights: using the <em>enabled</em> property.<br />
+If you want to turn on/off only the beam from script, you can change the <em>enabled</em> property of the component:</p>
+<pre><code>var beam = GetComponent&lt;VLB.VolumetricLightBeam&gt;();
+beam.enabled = false; // turn off the beam (and the beam only)
+</code></pre>
+
+<div class="admonition note">
+<p>If a <em>VolumetricLightBeam</em> component is attached on the same GameObject than a <em>Light</em>, disabling the <em>Light</em> component will not disable the beam (the light and the beam are 2 distinct components).</p>
+</div>
+<p>Additionally you can turn on/off both the light and the beam, by simply set the GameObject active/inactive: <code>gameObject.SetActive(false);</code></p>
+<hr />
+<h2 id="basic">Basic</h2>
+<h3 id="spot-angle">Spot Angle</h3>
+<p>Define the angle (in degrees) at the base of the beam's cone.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Angle 25" src="../img/prop_spot_angle_25.png" /></th>
+<th align="center"><img alt="Angle 45" src="../img/prop_spot_angle_45.png" /></th>
+<th align="center"><img alt="Angle 90" src="../img/prop_spot_angle_90.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">25 degrees</td>
+<td align="center">45 degrees</td>
+<td align="center">90 degrees</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p>If attached to a Spotlight, check the toggle <em>From Spot</em> to get the same value than the <em>Spot Angle</em> Light's property.</p>
+</div>
+<h3 id="color">Color</h3>
+<p>Use the color picker to set the color of the beam (takes account of the alpha value).</p>
+<div class="admonition note">
+<p>If attached to a Spotlight, check the toggle <em>From Spot</em> to get the same value than the <em>Color</em> Light's property.</p>
+</div>
+<h3 id="side-thickness">Side Thickness</h3>
+<p>Thickness of the beam when looking at it from the side.</p>
+<ul>
+<li>1.0 = the beam is fully visible with hard edges.</li>
+<li>Lower values produce softer transition at beam edges.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Thickness 0.0" src="../img/prop_thickness000.png" /></th>
+<th align="center"><img alt="Thickness 0.75" src="../img/prop_thickness075.png" /></th>
+<th align="center"><img alt="Thickness 1.0" src="../img/prop_thickness100.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.0</td>
+<td align="center">0.75</td>
+<td align="center">1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you set the lowest possible value and want to make the beam even thinner, just lower the <a href="#spot-angle"><em>Spot Angle</em></a> and/or the <a href="#truncated-radius"><em>Truncated Radius</em></a> properties.</p>
+</div>
+<h3 id="track-changes-during-playtime">Track Changes During Playtime</h3>
+<p>If true, the light beam will keep track of the changes of its own properties and the spotlight attached to it (if any) during playtime. This would allow you to modify the light beam in realtime from Script, Animator and/or Timeline.</p>
+<div class="admonition note">
+<p>Enabling this feature is at very minor performance cost. So keep it disabled if you don't plan to modify this light beam during playtime.</p>
+</div>
+<hr />
+<h2 id="inside">Inside</h2>
+<h3 id="alpha">Alpha</h3>
+<p>Modulate the opacity of the inside geometry of the beam. Is multiplied to <a href="#color"><em>Color's alpha</em></a>.</p>
+<h3 id="glare-frontal">Glare (frontal)</h3>
+<p>Boost intensity factor when looking at the beam from the inside directly at the source.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Glare Frontal" src="../img/prop_inside_glare_0.png" /></th>
+<th align="center"><img alt="Glare Frontal" src="../img/prop_inside_glare_1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.0</td>
+<td align="center">1.0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="outside">Outside</h2>
+<h3 id="alpha_1">Alpha</h3>
+<p>Modulate the opacity of the outside geometry of the beam. Is multiplied to <a href="#color"><em>Color's alpha</em></a>.</p>
+<h3 id="glare-from-behind">Glare (from behind)</h3>
+<p>Boost intensity factor when looking at the beam from behind.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Glare Behind" src="../img/prop_outside_glare_0.png" /></th>
+<th align="center"><img alt="Glare Behind" src="../img/prop_outside_glare_1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.0</td>
+<td align="center">1.0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="attenuation">Attenuation</h2>
+<h3 id="equation">Equation</h3>
+<p>Attenuation equation used to compute fading between <em>Fade Start Distance</em> and <em>Range Distance</em>.</p>
+<ul>
+<li><strong>Linear</strong>: Simple linear attenuation.</li>
+<li><strong>Quadratic</strong>: Quadratic attenuation. Since this is the way light behaves in real life, this usually gives more realistic results than the linear attenuation.</li>
+<li><strong>Blend</strong>: Custom blending mix between linear and quadratic attenuation (can be customize using a slider).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Attenuation Linear" src="../img/prop_attenuation_linear.png" /></th>
+<th align="center"><img alt="Attenuation Blend 0.5" src="../img/prop_attenuation_blend0.5.png" /></th>
+<th align="center"><img alt="Attenuation Quadratic" src="../img/prop_attenuation_quad.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Linear</td>
+<td align="center">Blend (factor 0.5)</td>
+<td align="center">Quadratic</td>
+</tr>
+</tbody>
+</table>
+<h3 id="range-distance">Range Distance</h3>
+<p>Maximum distance (in units) of the light beam. After this distance, the beam is entirely faded out.  </p>
+<div class="admonition note">
+<p>If attached to a Spotlight, check the toggle <em>From Spot</em> to get the same value than the <em>Range</em> Light's property.</p>
+</div>
+<h3 id="fade-start-distance">Fade Start Distance</h3>
+<p>Distance from the light source (in units) the beam intensity will start to fall off.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Fade Start" src="../img/prop_fade_start_0.png" /></th>
+<th align="center"><img alt="Fade Start" src="../img/prop_fade_start_25.png" /></th>
+<th align="center"><img alt="Fade Start" src="../img/prop_fade_start_50.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0%</td>
+<td align="center">25%</td>
+<td align="center">50%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3d-noise">3D Noise</h2>
+<p>3D Noise is a feature to simulate volumetric fog / mist / smoke effects on the beams.<br />
+To achieve that, a tiled 3D noise texture is internally used.</p>
+<div class="admonition warning">
+<p class="admonition-title">Platform specific</p>
+<p>Since mobile platforms cannot handle 3D textures, this feature is currently not supported on mobile.</p>
+</div>
+<h3 id="enabled">Enabled</h3>
+<p>Enable the 3D Noise effect.</p>
+<div class="admonition bug">
+<p class="admonition-title">Known issue with WebGL in Editor</p>
+<p>For some reason, 3D textures (and so 3D Noise) are not working in Editor if WebGL is set as the current platform. But the 3D Noise works totally fine in the browser if you export a WebGL build... So as a workaround, and until this bug is fixed by Unity, this feature is temporary disabled in Editor with WebGL.</p>
+</div>
+<h3 id="intensity">Intensity</h3>
+<p>Higher intensity means the noise contribution is stronger and more visible.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Noise Intensity" src="../img/prop_noise_intensity_0.png" /></th>
+<th align="center"><img alt="Noise Intensity" src="../img/prop_noise_intensity_0.5.png" /></th>
+<th align="center"><img alt="Noise Intensity" src="../img/prop_noise_intensity_1.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.0 (disabled)</td>
+<td align="center">0.5</td>
+<td align="center">1.0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scale">Scale</h3>
+<p>3D Noise texture scaling. Higher scale makes the noise more visible, but potentially less realistic because the texture tiling could become more apparent.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Noise Scale" src="../img/prop_noise_scale_0.4.png" /></th>
+<th align="center"><img alt="Noise Scale" src="../img/prop_noise_scale_0.8.png" /></th>
+<th align="center"><img alt="Noise Scale" src="../img/prop_noise_scale_1.4.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.4</td>
+<td align="center">0.8</td>
+<td align="center">1.4</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p>If the toggle <strong>Use Global</strong> is checked, it will use <a href="../config/#scale">the global <strong>Scale</strong> property set in <em>configuration file</em></a>.</p>
+</div>
+<h3 id="velocity">Velocity</h3>
+<p>Vector3 property defining the world space direction (the direction of the vector) and speed (the magnitude of the vector) of the noise scrolling, simulating the fog/smoke movement.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We recommend to tweak this property during playtime, because depending on the Unity version you use, the texture scrolling is not updated every frame.</p>
+</div>
+<div class="admonition note">
+<p>If the toggle <strong>Use Global</strong> is checked, it will use <a href="../config/#velocity">the global <strong>Velocity</strong> property set in the <em>configuration file</em></a>.</p>
+</div>
+<hr />
+<h2 id="soft-intersections-blending-distances">Soft Intersections Blending Distances</h2>
+<h3 id="camera">Camera</h3>
+<p>Because the volumetric beams are rendered using cone geometry, it is possible for the camera to intersect with the geometry, which could produce unwanted artifacts. This property is designed to fix this issue. It specifies the distance between the beam geometry and the camera's near clip plane where the beam will start to fade, making a smoother transition.  </p>
+<ul>
+<li>0.0 = hard intersection with the camera's near clip plane.  </li>
+<li>Higher values produce soft intersection when the camera is near the cone geometry.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Blending Camera" src="../img/prop_blend_cam_off.png" /></th>
+<th align="center"><img alt="Blending Camera" src="../img/prop_blend_cam_on.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.0</td>
+<td align="center">0.25</td>
+</tr>
+</tbody>
+</table>
+<h3 id="opaque-geometry">Opaque Geometry</h3>
+<p>Distance from the world geometry the beam will fade.</p>
+<ul>
+<li>0.0 = hard intersection with world's geometry. </li>
+<li>Higher values produce soft intersection when the beam intersects other opaque geometry.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Blending Opaque Geometry" src="../img/prop_blend_geom_off.png" /></th>
+<th align="center"><img alt="Blending Opaque Geometry" src="../img/prop_blend_geom_on.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.0</td>
+<td align="center">1.0</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p>To support this feature, the rendering camera must use <code>DepthTextureMode.Depth</code>.<br />
+By default, the plugin will enforce this property to all cameras attempting to render a beam. If you want to disable this behavior for some reason, you can comment the following line in <em>BeamGeometry.cs</em> : <code>#define FORCE_CURRENT_CAMERA_DEPTH_TEXTURE_MODE</code>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Platform specific</p>
+<p>The quality of this feature is highly depend on the depth buffer precision. On platforms with low precision Z buffer such as mobile, it's recommended to keep a small depth range on your cameras clip planes: the difference between the near and far clip planes should be as low as possible.</p>
+</div>
+<hr />
+<h2 id="cone-geometry">Cone Geometry</h2>
+<h3 id="truncated-radius">Truncated Radius</h3>
+<p>Radius (in units) at the beam's source (the top of the cone).</p>
+<ul>
+<li>0.0 will generate perfect cone geometry (with a sharp apex).</li>
+<li>Higher values will generate truncated cones.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Truncated Radius" src="../img/prop_radius_0.png" /></th>
+<th align="center"><img alt="Truncated Radius" src="../img/prop_radius_0.25.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0.0</td>
+<td align="center">0.25</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p>Increasing the <em>Truncated Radius</em> property will not increase the <a href="#spot-angle"><em>Spot Angle</em></a>. This means that the cone's maximum radius is not dependent on the <em>Truncated Radius</em> property.</p>
+</div>
+<h3 id="sides">Sides</h3>
+<p>Number of Sides of the cone (tessellation). Higher values give better looking results, but require more memory and graphic performance.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Sides" src="../img/prop_sides_8.png" /></th>
+<th align="center"><img alt="Sides" src="../img/prop_sides_32.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">8 sides</td>
+<td align="center">32 sides</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p>Changing the <em>Sides</em> property at runtime is not supported (even if the <a href="#track-changes-during-playtime"><em>Track Changes During Playtime</em></a> property if enabled), because it would require to regenerate the beam mesh, which would be too performance intensive.</p>
+</div>
+<h3 id="cap-geom">Cap Geom</h3>
+<p>Show the cap of the cone or not (only visible from the inside).</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img alt="Cap Geom" src="../img/prop_cap_off.png" /></th>
+<th align="center"><img alt="Cap Geom" src="../img/prop_cap_on.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Off</td>
+<td align="center">On</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p>Even if the <a href="#truncated-radius"><em>Truncated Radius</em></a> is 0.0, the <em>Cap Geom</em> property is still important to consider, since the <a href="#truncated-radius"><em>Truncated Radius</em></a> can be changed in realtime.</p>
+</div>
+<div class="admonition note">
+<p>Changing the <em>Cap Geom</em> property at runtime is not supported (even if the <a href="#track-changes-during-playtime"><em>Track Changes During Playtime</em></a> property if enabled), because it would require to regenerate the beam mesh, which would be too performance intensive.</p>
+</div>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../comp-dustparticles/" title="Dust Particles" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Dust Particles
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.6cdc17f0.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-88459828-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>

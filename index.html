@@ -1,0 +1,555 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation of Volumetric Light Beam Unity Asset">
+      
+      
+      
+        <meta name="author" content="Tech Salad">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.4">
+    
+    
+      
+        <title>Volumetric Light Beam Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="./assets/stylesheets/application.bcabdff3.css">
+      
+        <link rel="stylesheet" href="./assets/stylesheets/application-palette.792431c1.css">
+      
+    
+    
+      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    
+      <body data-md-color-primary="teal" data-md-color-accent="amber">
+    
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="Volumetric Light Beam Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Volumetric Light Beam Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Home
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Volumetric Light Beam Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Home
+      </label>
+    
+    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+      Home
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#videos" title="Videos" class="md-nav__link">
+    Videos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#showcase" title="Showcase" class="md-nav__link">
+    Showcase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-your-first-volumetric-light-beam" title="How to create your first Volumetric Light Beam" class="md-nav__link">
+    How to create your first Volumetric Light Beam
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demos" title="Demos" class="md-nav__link">
+    Demos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact" title="Contact" class="md-nav__link">
+    Contact
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting Started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-the-plugin" title="Install the plugin" class="md-nav__link">
+    Install the plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-your-first-light-beam" title="Create your first light beam" class="md-nav__link">
+    Create your first light beam
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="comp-lightbeam/" title="Light Beam" class="md-nav__link">
+      Light Beam
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="comp-dustparticles/" title="Dust Particles" class="md-nav__link">
+      Dust Particles
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="config/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#videos" title="Videos" class="md-nav__link">
+    Videos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#showcase" title="Showcase" class="md-nav__link">
+    Showcase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-your-first-volumetric-light-beam" title="How to create your first Volumetric Light Beam" class="md-nav__link">
+    How to create your first Volumetric Light Beam
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demos" title="Demos" class="md-nav__link">
+    Demos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact" title="Contact" class="md-nav__link">
+    Contact
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting Started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-the-plugin" title="Install the plugin" class="md-nav__link">
+    Install the plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-your-first-light-beam" title="Create your first light beam" class="md-nav__link">
+    Create your first light beam
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="home">Home</h1>
+<p><a href="http://u3d.as/WQU"><strong><em>Volumetric Light Beam</em></strong></a> is a 5-stars-rated asset available for the Unity engine, which greatly <strong>improve the lighting of your scene</strong> by generating <strong>truly volumetric procedural beams of light</strong> / light shafts rays effects.<br />
+This is a perfect, <strong>easy and cheap way to simulate density, depth and volume</strong> for your spotlights and/or flashlights.</p>
+<p><a href="http://u3d.as/WQU"><strong>&gt;&gt; Get it on the AssetStore &lt;&lt;</strong></a></p>
+<iframe src="https://api.assetstore.unity3d.com/affiliate/embed/package/99888/widget-wide" style="width:600px; height:130px; border:0px;"></iframe>
+
+<p>This is the Documentation of the Volumetric Light Beam plugin version <strong>1.31</strong>.</p>
+<p>Please consider rating and writing a review on the <a href="http://u3d.as/WQU"><strong>Asset Store page</strong></a> if you like it! Thanks :)</p>
+<hr />
+<h2 id="resources">Resources</h2>
+<h3 id="videos">Videos</h3>
+<h4 id="showcase">Showcase</h4>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/-zLNKNHn-XM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></p>
+<h4 id="how-to-create-your-first-volumetric-light-beam">How to create your first Volumetric Light Beam</h4>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/q2IdxuJ0fk0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></p>
+<h3 id="demos">Demos</h3>
+<ul>
+<li><a href="http://saladgamer.com/unitywebdemo/volumetriclightbeam/"><strong>WebGL Demo</strong></a></li>
+<li><a href="http://saladgamer.com/unitywebdemo/volumetriclightbeam_stresstest/"><strong>WebGL Stress test</strong></a></li>
+</ul>
+<h3 id="contact">Contact</h3>
+<ul>
+<li>Have a look of the <a href="https://forum.unity.com/threads/released-volumetric-light-beam.499367/"><strong>Forum Thread</strong></a> if you want to share something with the community.</li>
+<li>Feel free to <a href="mailto:techsaladunity@gmail.com"><strong>reach us</strong></a> if you need help or to suggest some improvements/features!</li>
+</ul>
+<hr />
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="install-the-plugin">Install the plugin</h3>
+<p>Get the plugin on the <a href="http://u3d.as/WQU"><strong>AssetStore</strong></a> and import it. The plugin installs the necessary files into a folder <em>Assets/Plugins/VolumetricLightBeam</em> in your project.<br />
+<img alt="Files imported in your project" src="./img/install_project_files.png" />  </p>
+<div class="admonition info">
+<p class="admonition-title">Supported Unity versions</p>
+<p><em>Volumetric Light Beam</em> is compatible with all Unity versions from <em>5.2.0</em> to the latest <em>2017.X</em> releases.</p>
+</div>
+<p>And that's it! You can start to create new volumetric lights!</p>
+<h3 id="create-your-first-light-beam">Create your first light beam</h3>
+<p>In the Unity's <em>Create</em> menu, browse to <em>Light</em>, and choose either one of the new entity:</p>
+<ul>
+<li><em>Volumetric Beam</em>: creates a new standalone beam of light (no lights attached).</li>
+<li><em>Volumetric Beam and Spotlight</em>: creates a new Spot-light with a beam of light attached to it.<br />
+<img alt="Create a new Volumetric Light Beam" src="./img/menu_create.png" /></li>
+</ul>
+<p>In addition, you can attach a <a href="comp-lightbeam/"><em>VolumetricLightBeam</em></a> component to:</p>
+<ul>
+<li>
+<p>An existing <em>Spotlight</em> (right click on the inspector)<br />
+<img alt="Attach a beam to a spotlight" src="./img/menu_attach_to_light.png" /></p>
+</li>
+<li>
+<p>An existing GameObject (via the <em>Add Component</em> button)<br />
+<img alt="Attach a beam to a GameObject" src="./img/menu_attach_to_gao.png" /></p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="comp-lightbeam/" title="Light Beam" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Light Beam
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="./assets/javascripts/application.6cdc17f0.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-88459828-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>
