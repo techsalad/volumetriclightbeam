@@ -1,0 +1,23 @@
+site_name: Volumetric Light Beam Documentation
+site_description: Documentation of Volumetric Light Beam Unity Asset
+site_author: Tech Salad
+
+pages:
+    - Home: index.md
+    - Light Beam: comp-lightbeam.md
+    - Dust Particles: comp-dustparticles.md
+   # - Dynamic Occlusion: comp-dynocclusion.md
+    - Configuration: config.md
+
+theme:
+  name: 'material'
+  palette:
+      primary: 'teal'
+      accent: 'amber'
+
+markdown_extensions:
+  - admonition
+
+google_analytics:
+  - 'UA-88459828-1'
+  - 'auto'
